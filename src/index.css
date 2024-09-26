@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.fredoka{
+  font-family: 'Fredoka', sans-serif;
+}
+
+body{
+  min-height: 100vh; /* Altura del contenedor */
+  background: linear-gradient(to bottom, #f7fbfe, #fff7ed); /* De izquierda a derecha */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.button {  
+  padding: 10px;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+.input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
