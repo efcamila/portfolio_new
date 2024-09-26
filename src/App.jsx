@@ -23,8 +23,8 @@ function App() {
 
   return (
     <div className="grid grid-cols-4 md:grid-cols-10 px-8 md:px-20 ">
-      <nav className="px-6 py-4 col-span-10 sticky top-0 bg-white/20 backdrop-blur-lg">
-        <ul className="flex justify-center gap-4 md:gap-10 title text-xs md:text-sm text-stone-900 font-medium">
+      <nav className="px-2 md:px-6 py-4 col-span-10 sticky top-0 bg-white/20 backdrop-blur-lg">
+        <ul className="flex justify-center gap-4 md:gap-10 title text-sm text-stone-900 font-medium">
           {navLinks.map((link, index) => (
             <li key={index}>
               <a href={link.href} className="hover:text-blue-600">
