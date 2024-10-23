@@ -52,17 +52,17 @@ function App() {
             <p>Desarrollo interfaces responsivas, atractivas y funcionales.</p>
             <div className="mt-4 flex h-full gap-3" id="contact">
               <DownloadButton
-                srcFile="./CamilaEfler_CurriculumVitae.pdf"
+                srcFile="./CamilaEfler_CV.pdf"
                 handleMouseEnter={() => handleMouseEvents(true)}
                 handleMouseLeave={() => handleMouseEvents(false)}
                 handleClickEnter={() => handleClickEvents(true)}
                 handleClickLeave={() => handleClickEvents(false)}
               />
               <a href="https://www.linkedin.com/in/efcamilaweb" target="_blank">
-              <button className="button w-fit flex h-full bg-blue-600 text-white items-center justify-center gap-2 text-base md:text-lg">
-                <FaLinkedin />
-                LinkedIn
-              </button>
+                <button className="button w-fit flex h-full bg-blue-600 text-white items-center justify-center gap-2 text-base md:text-lg">
+                  <FaLinkedin />
+                  LinkedIn
+                </button>
               </a>
             </div>
           </div>
@@ -115,7 +115,8 @@ function App() {
           </p>
 
           <a
-            href="./NoCountry_EflerCamila.jpg" target="_blank"
+            href="./NoCountry_EflerCamila.jpg"
+            target="_blank"
             className="flex items-center gap-3 underline underline-offset-2 text-blue-900"
           >
             <FaLink className="text-blue-900" /> Simulación Laboral No Country,
@@ -133,47 +134,45 @@ function App() {
           </h2>
           <div className="col-span-4 md:col-span-8 flex flex-col gap-10 py-6">
             {projects.map((project, index) => (
-              <>
-                <div
-                  className="w-full text-stone-800 flex flex-col gap-5"
-                  key={index}
-                >
-                  <h2 className="text-stone-900 font-semibold text-xl">
-                    {project.title}
-                    <div className="flex flex-wrap gap-3 mt-1">
-                      {project.lenguages.map((language, index) => (
-                        <p
-                          key={index}
-                          className={`flex items-center gap-2 px-3 rounded-xl text-sm ${language.style}`}
-                        >
-                          {language.icon}
-                          {language.name}
-                        </p>
-                      ))}
-                    </div>
-                  </h2>
-                  <p className="text-stone-600">{project.description}</p>
-                  <div className="flex gap-2">
-                    {project.preview ? (
-                      <a href={project.preview} className="w-fit">
-                        <button className="bg-gray-500 text-white px-3 py-2 rounded-lg flex items-center gap-2">
-                          <FaLink />
-                          Preview
-                        </button>
-                      </a>
-                    ) : (
-                      ""
-                    )}
-                    <a href={project.url} className="w-fit">
-                      <button className="bg-black px-3 py-2 rounded-lg text-white flex items-center gap-2">
-                        <FaGithub />
-                        Code
+              <div
+                className="w-full text-stone-800 flex flex-col gap-5"
+                key={index}
+              >
+                <h2 className="text-stone-900 font-semibold text-xl">
+                  {project.title}
+                  <div className="flex flex-wrap gap-3 mt-1">
+                    {project.lenguages.map((language, index) => (
+                      <p
+                        key={index}
+                        className={`flex items-center gap-2 px-3 rounded-xl text-sm ${language.style}`}
+                      >
+                        {language.icon}
+                        {language.name}
+                      </p>
+                    ))}
+                  </div>
+                </h2>
+                <p className="text-stone-600">{project.description}</p>
+                <div className="flex gap-2">
+                  {project.preview ? (
+                    <a href={project.preview} className="w-fit" key={index}>
+                      <button className="bg-gray-500 text-white px-3 py-2 rounded-lg flex items-center gap-2">
+                        <FaLink />
+                        Preview
                       </button>
                     </a>
-                  </div>
+                  ) : (
+                    ""
+                  )}
+                  <a href={project.url} className="w-fit">
+                    <button className="bg-black px-3 py-2 rounded-lg text-white flex items-center gap-2">
+                      <FaGithub />
+                      Code
+                    </button>
+                  </a>
                 </div>
                 <hr className="border border-transparent border-b-stone-900/20 h-1" />
-              </>
+              </div>
             ))}
           </div>
         </div>

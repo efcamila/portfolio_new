@@ -1,3 +1,4 @@
+import React from "react";
 import {
     FaCss3Alt,
     FaJava,
@@ -9,6 +10,30 @@ import { IoLogoJavascript } from "react-icons/io";
 import { DiPhp } from "react-icons/di";
 
 export const projects = [
+  {
+    title: "Amaite by Vanesa",
+    description:
+      "Landing page para centro de estética que busca promocionar su local.",
+    lenguages: [
+      {
+        name: "react",
+        style: "bg-[#61DAFB] text-stone-700",
+        icon: <FaReact />,
+      },
+      {
+        name: "typescript",
+        style: "bg-[#007ACC] text-stone-100",
+        icon: <BiLogoTypescript />,
+      },
+      {
+        name: "tailwind",
+        style: "bg-[#38B2AC] text-stone-100",
+        icon: <RiTailwindCssFill />,
+      },
+    ],
+    preview: "https://amaitebyvanesa.com",
+    url: "Privado"
+  },
     {
       title: "Biblioteca de Componentes",
       description:
