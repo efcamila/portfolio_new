@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoMdDownload } from "react-icons/io";
-import { FaCheck } from "react-icons/fa6";
+import React from 'react';
 
 export default function DownloadButton({ srcFile, handleMouseEnter,handleMouseLeave, handleClickEnter, handleClickLeave}) {
   const [download, setDownload] = useState(false);

@@ -32,7 +32,6 @@ export const projects = [
       },
     ],
     preview: "https://amaitebyvanesa.com",
-    url: "Privado"
   },
     {
       title: "Biblioteca de Componentes",

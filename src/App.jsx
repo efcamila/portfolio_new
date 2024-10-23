@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from 'react';
 import Avatar from "./components/Avatar";
 import CopyButton from "./components/CopyButton";
 import DownloadButton from "./components/DownloadButton";
@@ -154,22 +155,22 @@ function App() {
                 </h2>
                 <p className="text-stone-600">{project.description}</p>
                 <div className="flex gap-2">
-                  {project.preview ? (
+                  {project.preview && (
                     <a href={project.preview} className="w-fit" key={index}>
                       <button className="bg-gray-500 text-white px-3 py-2 rounded-lg flex items-center gap-2">
                         <FaLink />
                         Preview
                       </button>
                     </a>
-                  ) : (
-                    ""
                   )}
+                  {project.url && (
                   <a href={project.url} className="w-fit">
                     <button className="bg-black px-3 py-2 rounded-lg text-white flex items-center gap-2">
                       <FaGithub />
                       Code
                     </button>
                   </a>
+                  )}
                 </div>
                 <hr className="border border-transparent border-b-stone-900/20 h-1" />
               </div>
