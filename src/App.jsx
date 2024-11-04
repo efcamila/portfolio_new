@@ -112,7 +112,7 @@ function App() {
             Estudios
           </h2>
           <p className="text-stone-700 text-base">
-            Técnicatura Universitaria en Web, 2023.
+            Técnicatura Universitaria en Web, Universidad Nacional de San Luis, 2023.
           </p>
 
           <a
