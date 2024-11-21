@@ -53,7 +53,7 @@ function App() {
             <p>Desarrollo interfaces responsivas, atractivas y funcionales.</p>
             <div className="mt-4 flex h-full gap-3" id="contact">
               <DownloadButton
-                srcFile="/CamilaEfler-CV.pdf"
+                srcFile="/CamilaEfler_CV.pdf"
                 handleMouseEnter={() => handleMouseEvents(true)}
                 handleMouseLeave={() => handleMouseEvents(false)}
                 handleClickEnter={() => handleClickEvents(true)}
