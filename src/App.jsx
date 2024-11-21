@@ -93,21 +93,21 @@ function App() {
           </h1>
 
          <div className="mb-4">
-          <h2 className="text-stone-900 text-sm font-semibold mb-1">BACKEND</h2>
-         <ul className="list-disc px-4 flex flex-col gap-1 text-stone-700 text-base">
-            <li>PHP</li>
-            <li>Java</li>
-            <li>Node.js</li>
-            <li>MySQL, MongoDB</li>
-          </ul>
-         </div>
-         <div className="mb-4">
           <h2 className="text-stone-900 text-sm font-semibold mb-1">FRONTEND</h2>
          <ul className="list-disc px-4 flex flex-col gap-1 text-stone-700 text-base">
             <li>HTML, CSS y Javascript</li>
             <li>React</li>
             <li>Typescript</li>
             <li>Tailwind CSS</li>
+          </ul>
+         </div>
+         <div className="mb-4">
+          <h2 className="text-stone-900 text-sm font-semibold mb-1">BACKEND</h2>
+         <ul className="list-disc px-4 flex flex-col gap-1 text-stone-700 text-base">
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Node.js</li>
+            <li>MySQL, MongoDB</li>
           </ul>
          </div>
          <div className="mb-4">
