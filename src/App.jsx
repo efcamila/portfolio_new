@@ -5,7 +5,7 @@ import CopyButton from "./components/CopyButton";
 import DownloadButton from "./components/DownloadButton";
 import { FaCode, FaGithub, FaLink, FaLinkedin } from "react-icons/fa6";
 import { MdComputer } from "react-icons/md";
-import { IoBookOutline } from "react-icons/io5";
+import { IoBookOutline, IoLocationOutline, IoLocationSharp } from "react-icons/io5";
 import { projects } from "./data/data";
 
 function App() {
@@ -48,10 +48,13 @@ function App() {
             Hola, me llamo <span className="font-semibold fredoka">Camila</span>
             .
           </h1>
-          <div className="flex flex-col gap-1 mt-3 text-base md:text-xl text-stone-800 h-full">
-            <p>Técnica Web, Argentina.</p>
-            <p>Desarrollo interfaces responsivas, atractivas y funcionales.</p>
-            <div className="mt-4 flex h-full gap-3" id="contact">
+          <div className="flex flex-col gap-1 mt-1 text-base md:text-xl text-stone-800 h-full">
+            <div className="mb-2">
+            <p className="font-medium">Técnica Universitaria Web | Full Stack</p>
+            <p className="font-light">Desarrollo aplicaciones web responsivas, atractivas y funcionales.</p>
+            </div>
+            <p className="flex items-center gap-1 font-medium uppercase text-sm"><IoLocationOutline />San Luis, Argentina</p>
+            <div className="flex h-full gap-3 mt-4" id="contact">
               <DownloadButton
                 srcFile="/CamilaEfler_CV.pdf"
                 handleMouseEnter={() => handleMouseEvents(true)}
