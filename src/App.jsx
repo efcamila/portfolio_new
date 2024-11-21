@@ -23,7 +23,7 @@ function App() {
   ];
 
   return (
-    <div className="grid grid-cols-4 md:grid-cols-10 px-8 md:px-20 ">
+    <div className="grid grid-cols-4 md:grid-cols-10">
       <nav className="px-2 md:px-6 py-4 col-span-10 sticky top-0 bg-white/20 backdrop-blur-lg">
         <ul className="flex justify-center gap-4 md:gap-10 title text-sm text-stone-900 font-medium">
           {navLinks.map((link, index) => (
@@ -35,7 +35,7 @@ function App() {
           ))}
         </ul>
       </nav>
-      <div className="grid col-span-4 md:grid-cols-10 md:col-span-10 lg:col-start-3 lg:col-end-9 mt-1 justify-self-center place-items-center place-self-center w-full">
+      <div className="grid col-span-4 md:grid-cols-10 md:col-span-10 lg:col-start-3 lg:col-end-9 mt-1 justify-self-center place-items-center place-self-center w-full px-8 md:px-10">
         <div className="col-span-4 md:col-span-5 order-2 md:order-1">
           <Avatar isHovered={isHovered} isClicked={isClicked} />
         </div>
