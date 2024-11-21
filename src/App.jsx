@@ -53,7 +53,7 @@ function App() {
             <p className="font-medium">Técnica Universitaria Web | Full Stack</p>
             <p className="font-light">Desarrollo aplicaciones web responsivas, atractivas y funcionales.</p>
             </div>
-            <p className="flex items-center gap-1 font-medium uppercase text-sm"><IoLocationOutline />San Luis, Argentina</p>
+            <p className="flex items-center gap-1 font-medium text-sm"><IoLocationOutline />SAN LUIS, ARGENTINA</p>
             <div className="flex h-full gap-3 mt-4" id="contact">
               <DownloadButton
                 srcFile="/CamilaEfler_CV.pdf"
@@ -87,26 +87,40 @@ function App() {
           className="col-span-4 md:col-span-10 lg:col-start-2 mt-14 w-full order-3 pt-16"
           id="ability"
         >
-          <h2 className="text-2xl text-stone-900 flex items-center gap-3 font-semibold mb-4">
+          <h1 className="text-2xl text-stone-900 flex items-center gap-3 font-semibold mb-4">
             <MdComputer />
             Habilidades
-          </h2>
+          </h1>
 
-          <ul className="list-disc px-10 md:px-4 flex flex-col gap-1 text-stone-700 text-base">
+         <div className="mb-4">
+          <h2 className="text-stone-900 text-sm font-semibold mb-1">BACKEND</h2>
+         <ul className="list-disc px-4 flex flex-col gap-1 text-stone-700 text-base">
             <li>PHP</li>
-            <li>Javascript</li>
             <li>Java</li>
+            <li>Node.js</li>
+            <li>MySQL, MongoDB</li>
+          </ul>
+         </div>
+         <div className="mb-4">
+          <h2 className="text-stone-900 text-sm font-semibold mb-1">FRONTEND</h2>
+         <ul className="list-disc px-4 flex flex-col gap-1 text-stone-700 text-base">
+            <li>HTML, CSS y Javascript</li>
             <li>React</li>
             <li>Typescript</li>
             <li>Tailwind CSS</li>
-            <li>CSS</li>
-            <li>Node.js</li>
-            <li>MySQL, MongoDB</li>
+          </ul>
+         </div>
+         <div className="mb-4">
+          <h2 className="text-stone-900 text-sm font-semibold mb-1">HERRAMIENTAS</h2>
+         <ul className="list-disc px-4 flex flex-col gap-1 text-stone-700 text-base">
             <li>Git</li>
             <li>Github</li>
             <li>Figma</li>
+            <li>Insomnia</li>
+            <li>Selenium</li>
             <li>Inglés básico oral | intermedio lectura</li>
           </ul>
+         </div>
         </div>
 
         <div className="col-span-4 md:col-span-10 lg:col-start-2 mt-10 w-full order-3">
